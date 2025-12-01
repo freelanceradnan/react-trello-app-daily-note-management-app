@@ -19,7 +19,7 @@ const BoardCreatingForm = () => {
 
     return (
        
-        <div className="text-center m-top-md">
+        <div className="form-section">
             <form onSubmit={submitHandler}>
                 <input type="text" value={boardTitle} 
                 onChange={changeHandler}

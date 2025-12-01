@@ -6,10 +6,10 @@ import BoardItem from '../pages/BoardItem'
 const BoardList = () => {
     const {boards}=useContext(BoardContext)
     return (
-        <div>
+        <div class="board-main">
            {boards.map(boards=>(
             <Link key={boards.id} to={`/board/:id`}>
-                <BoardItem board={boards}/>
+                <BoardItem board={boards} />
             </Link>
            ))} 
         </div>

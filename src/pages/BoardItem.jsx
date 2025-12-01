@@ -19,9 +19,9 @@ board.tasks.forEach((taskId)=>{
 })
     }
     return (
-        <div>
+        <div className='board-item'>
             <h5>{board.title}</h5>
-            <p onClick={removeHandler}>x</p>
+            <p onClick={removeHandler} className='cross-icon'>x</p>
         </div>
     );
 };
