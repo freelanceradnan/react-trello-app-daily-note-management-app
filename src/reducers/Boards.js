@@ -1,14 +1,15 @@
 export const BoardReducer=(boards=[],action)=>{
     switch(action.type){
-        case "CREATE_BOARD":{
-            const newBoard={
-                id:Date.now()+"",
-                title:action.payload,
-                lists:[],
-                tasks:[]
-            }
-            return [...boards,newBoard]
-        }
+       case "CREATE_BOARD": {
+  const newBoard = {
+    id: Date.now() + "",
+    title: action.payload,
+    lists: [],
+    tasks: []
+  };
+  return [...boards, newBoard];
+}
+
         case "CHANGE_BOARD_NAME":{
             return boards.map(item=>{
                 if(item.id===action.payload.id){
