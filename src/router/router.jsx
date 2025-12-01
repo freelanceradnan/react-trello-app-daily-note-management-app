@@ -3,7 +3,6 @@ import Board from "../pages/Board";
 
 import BoardDetails from "../pages/BoardDetails";
 
-{createBrowserRouter}
 
  const router=createBrowserRouter([
 {path:"/",element:<Board/>},
