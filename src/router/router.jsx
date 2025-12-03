@@ -6,6 +6,6 @@ import BoardDetails from "../pages/BoardDetails";
 
  const router=createBrowserRouter([
 {path:"/",element:<Board/>},
-{path:"/board/:id",element:<BoardDetails/>}
+{path:"/board/:boardId",element:<BoardDetails/>}
 ])
 export default router;

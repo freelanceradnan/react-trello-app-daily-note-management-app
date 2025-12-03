@@ -8,7 +8,7 @@ const BoardList = () => {
     return (
         <div class="board-main">
            {boards.map(boards=>(
-            <Link key={boards.id} to={`/board/:id`}>
+            <Link key={boards.id} to={`/board/${boards.id}`}>
                 <BoardItem board={boards} />
             </Link>
            ))} 
